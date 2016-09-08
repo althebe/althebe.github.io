@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<meta charset="UTF-8" />      
+    <title>yoursite.ted | I♥∆ </title>
+ <script type="text/javascript" src="js/jquery.js"></script>              
+ <script type="text/javascript" src="js/jquery-ui.js"></script>              
+ <script type="text/javascript" src="js/main.js"></script>
+ <script type="text/javascript" src="js/triangulatr.js"></script>
+ <script type="text/javascript" src="js/interface.js"></script>
+ <script type="text/javascript" src="js/base64.js"></script>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui-1.8.9.custom.css" />
+  </head>
+  <body onload="init();">
+    <div id="basicOps">
+	<div id="trBox" class="button"><div id="transparencySlider"></div></div>
+	<div class="button"><a href="#" id="svgSaver">Конвертировать</a> в SVG<span id="svgFile"></span></div>
+	<div id="recycleBox" class="button"><a href="#" title="Delete all vertices" id="recycler">Удалить все полигоны</a></div>
+	<div class="button">добавить 25 полигонов: <a href="#" id="randomGenerator">Рандомно</a></div>
+	<div class="button" style="float:right; margin-top:-5px"><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://somestuff.ru/triangulator" layout="button_count" show_faces="false" width="40"></fb:like></div>
+</div>
+	
+	</div>
+<div class="cleaner"></div>
+<div id="canvasContainer">
+    <canvas id="sourceImg" width="600" height="600"></canvas>    
+    <canvas id="canvas" width="600" height="600"></canvas>    
+</div>    
+<div class="cleaner"></div>	
+	
+<div id="wrapper">
+<div id="intro">
+<header id="header">
+<img src="i/logo.png" alt="I♥∆"/>
+<h1>Простой веб-иструмет которое преобразует ваше изображение в полигоналный арт</h1></header>
+<div id="holder" class="normal">Переташите свою фотографию сюда</div>
+<article>
+<section id="tutorial">
+<p>Как это работает:</p>
+<ul>
+    <li>поставте точки на холсте</li>
+<li>I♥∆ сгенерирует треугольники по алгоритму <a href="http://en.wikipedia.org/wiki/Delaunay_triangulation">тренгуляции Делоне</a> и подберет средние цвета треугольникам лежащих на поверхности изображения.
+<!--<li>Export canvas to SVG and save it to your Desktop</li>
+<li>Enjoy your beautiful artwork in any vector editor that supports SVG.</li>-->
+<li><a href="http://www.youtube.com/watch?v=8Q514klc27w">Вот тут</a> туториал по I♥∆</li>
+</ul>
+<p>Простите парни, I♥∆ работает только с файлом поддержки API</p>
+</section>
+</article>
+<footer>
+<a href="http://www.w3.org/html/logo/" id="h5"><img  src="i/h5.png" alt="самсинг из вранг виз ми" title="АЙЛ БИ БЭК"/></a>
+<a href="https://vk.com/t.zhvania" style="float:right; margin-top:5px">Переведено Тедом</a>
+</footer>	
+</div>	
+</div>
+  <script type="text/javascript">
+  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16798779-1']);
+    _gaq.push(['_trackPageview']);
+  
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  
+  </script>	
+
+  <a href="#" id="svgSaver"></a>
+  </body>
+</html>
